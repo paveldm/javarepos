@@ -1,5 +1,6 @@
 package prac1;
 
+import java.lang.*;
 public class Dog {
     private String name;
     private int age;
@@ -27,7 +28,9 @@ public class Dog {
     public int getAge() {
         return age;
     }
-
+    public String toString(){
+        return this.name+", age "+this.age;
+    }
     public void intoHumanAge(){
         System.out.println(name+"'s age in human years is "+age*7+" years");
     }
