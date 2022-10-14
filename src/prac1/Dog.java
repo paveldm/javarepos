@@ -1,6 +1,5 @@
 package prac1;
 
-import java.lang.*;
 public class Dog {
     private String name;
     private int age;
