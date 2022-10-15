@@ -1,5 +1,6 @@
+package prac1;
 public class TestBook {
-    public static void exec() {
+    public static void main(String[] args) {
         Book book1 = new Book("New Book", "History", "Author B.B.", (int) 2022);
         Book book2 = new Book("New Book2", "History2", "Author C.C.");
         Book book3 = new Book("New Book3", "History3");

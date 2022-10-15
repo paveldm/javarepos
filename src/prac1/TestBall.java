@@ -1,5 +1,4 @@
 package prac1;
-
 public class TestBall {
     public static void main(String[] args) {
         Ball ball1 = new Ball(5, "white");
