@@ -1,4 +1,4 @@
-package prac3;
+package prac3.num1;
 
 public class Rectangle extends Shape {
     protected double width;

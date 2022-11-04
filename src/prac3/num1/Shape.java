@@ -1,4 +1,4 @@
-package prac3;
+package prac3.num1;
 
 public abstract class Shape {
     protected String color;
