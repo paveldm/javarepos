@@ -19,6 +19,7 @@ public class Pr4 extends JFrame {
         setLayout(new FlowLayout());
         setSize(500, 100);
         setVisible(true);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         add(btn1);
 

@@ -22,5 +22,6 @@ public class Main {
         float r1 = 50, r2 = 33;
         float r3 = r1 / r2;
         System.out.println("Результат: " + r3);
+        System.out.println(System.getProperty("user.dir"));
     }
 }
