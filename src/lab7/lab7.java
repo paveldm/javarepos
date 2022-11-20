@@ -17,12 +17,12 @@ public class lab7 {
         states.set(1, "Дания"); // установка нового значения для 2-го объекта
 
         System.out.printf("В списке %d элементов \n", states.size());
-        for(String state : states){
+        for (String state : states) {
 
             System.out.println(state);
         }
 
-        if(states.contains("Германия")){
+        if (states.contains("Германия")) {
 
             System.out.println("\nСписок содержит государство Германия");
         }
@@ -32,7 +32,7 @@ public class lab7 {
         states.remove(0);
 
         Object[] countries = states.toArray();
-        for(Object country : countries){
+        for (Object country : countries) {
 
             System.out.println(country);
         }
