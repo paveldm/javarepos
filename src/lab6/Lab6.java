@@ -1,4 +1,4 @@
-package Lab6;
+package lab6;
 
 import java.awt.*;
 import java.awt.event.*;
