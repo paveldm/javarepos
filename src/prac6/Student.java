@@ -1,6 +1,6 @@
 package prac6;
 
-public class Student implements Comparable<Student> {
+public class Student {
     private String name;
     private int id;
     private int finalScore;
@@ -26,17 +26,6 @@ public class Student implements Comparable<Student> {
 
     public SortingStudentsByGPA getSortingByGPA() {
         return sortingByGPA;
-    }
-
-    @Override
-    public int compareTo(Student student) {
-        if (id == student.id) {
-            return 0;
-        } else if (id > student.id) {
-            return 1;
-        } else {
-            return -1;
-        }
     }
 
     @Override

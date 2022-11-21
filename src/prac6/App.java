@@ -2,19 +2,21 @@ package prac6;
 
 public class App {
 
-    public static void insertionSort(Comparable[] arr) {
-        Comparable curr;
+    public static void insertionSort(Student[] arr) {
+        Student temp;
         for (int i = 1; i < arr.length; i++) {
-            curr = arr[i];
-            for (int j = i; j > 0; j--) {
-                if (arr[j - 1].compareTo(curr) == 1) {
-                    arr[j] = arr[j - 1];
+            int value = arr[i].getId();
+            temp = arr[i];
+            int j = i - 1;
+            for (; j >= 0; j--) {
+                if (value < arr[j].getId()) {
+                    arr[j + 1] = arr[j];
                 }
                 else {
-                    arr[j] = curr;
                     break;
                 }
             }
+            arr[j + 1] = temp;
         }
     }
 
