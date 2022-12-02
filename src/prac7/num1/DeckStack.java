@@ -13,7 +13,7 @@ public class DeckStack {
         return deck.get(0);
     }
 
-    public void add_bottom(Integer card){
+    public void addBottom(Integer card){
         deck.push(card);
     }
 

@@ -20,6 +20,14 @@ public class App {
         }
     }
 
+    public static void quickSort(Student[] arr, int left, int right) {
+        if (left < right) {
+            int separator = separation(arr, left, right);
+            quickSort(arr, left, separator - 1);
+            quickSort(arr, separator + 1, right);
+        }
+    }
+
     private static int separation(Student[] arr, int left, int right) {
         Student separator = arr[right];
         int i = (left - 1);
@@ -37,14 +45,6 @@ public class App {
         arr[i + 1] = arr[right];
         arr[right] = temp;
         return (i + 1);
-    }
-
-    public static void quickSort(Student[] arr, int left, int right) {
-        if (left < right) {
-            int separator = separation(arr, left, right);
-            quickSort(arr, left, separator - 1);
-            quickSort(arr, separator + 1, right);
-        }
     }
 
     public static Student[] mergeSort(Student[] leftArr, Student[] rightArr) {

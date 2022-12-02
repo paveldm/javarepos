@@ -13,7 +13,7 @@ public class DeckQueue {
         return deck.peek();
     }
 
-    public void add_bottom(Integer card){
+    public void addBottom(Integer card){
         deck.offer(card);
     }
 
