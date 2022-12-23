@@ -1,7 +1,5 @@
 package prac7.num2;
-
 import java.util.*;
-
 public class DeckQueue {
     private Queue<Integer> deck = new LinkedList<>();
 

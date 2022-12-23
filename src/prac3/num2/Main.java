@@ -1,5 +1,4 @@
 package prac3.num2;
-
 public class Main {
 	public static void main(String[] args) {
 		MovablePoint point1 = new MovablePoint(3, 0, 10, 20);

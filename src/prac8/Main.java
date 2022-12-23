@@ -1,14 +1,11 @@
 package prac8;
-
 public class Main {
-
     public static void main(String[] args) {
         BoundedWaitList arr1 = new BoundedWaitList<>(5);
         for(int i = 0; i < 5; i++){
             arr1.add(i);
         }
         System.out.println(arr1);
-
         int elem = 3;
         if(arr1.contains(elem)){
             System.out.println("Список содержит элемент " + elem);

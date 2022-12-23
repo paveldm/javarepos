@@ -1,11 +1,7 @@
 package prac8;
-
 import java.util.concurrent.ConcurrentLinkedQueue;
-
 public class UnfairWaitList<E> extends WaitList<E> {
-
     UnfairWaitList() {}
-
     public void remove(E element) {
         content.remove(element);
     }

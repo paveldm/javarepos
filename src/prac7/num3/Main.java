@@ -1,7 +1,5 @@
 package prac7.num3;
-
 import java.util.Scanner;
-
 public class Main {
     public static int srav(int a, int b){
         if(a == 0 && b == 9) return 1;

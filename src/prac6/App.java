@@ -1,7 +1,5 @@
 package prac6;
-
 public class App {
-
     public static void insertionSort(Student[] arr) {
         Student temp;
         for (int i = 1; i < arr.length; i++) {
@@ -19,7 +17,6 @@ public class App {
             arr[j + 1] = temp;
         }
     }
-
     public static void quickSort(Student[] arr, int left, int right) {
         if (left < right) {
             int separator = separation(arr, left, right);
@@ -27,11 +24,9 @@ public class App {
             quickSort(arr, separator + 1, right);
         }
     }
-
     private static int separation(Student[] arr, int left, int right) {
         Student separator = arr[right];
         int i = (left - 1);
-
         Student temp;
         for (int j = left; j <= right - 1; j++) {
             if (arr[j].getSortingByGPA().compare(arr[j], separator) != 1) {
@@ -46,7 +41,6 @@ public class App {
         arr[right] = temp;
         return (i + 1);
     }
-
     public static Student[] mergeSort(Student[] leftArr, Student[] rightArr) {
         int left = leftArr.length, right = rightArr.length;
         Student[] newArr = new Student[left + right];
@@ -55,7 +49,6 @@ public class App {
         mergeSort(newArr, 0, left + right - 1);
         return newArr;
     }
-
     public static void mergeSort(Student[] arr, int l, int r) {
         if (l == r) return;
         int mid = (l + r) / 2;
@@ -76,7 +69,6 @@ public class App {
         for (int step = 0; step < r - l + 1; step++)
             arr[l + step] = tmp[step];
     }
-
     public static void main(String[] args) {
         Student[] iDNumber = new Student[5];
         iDNumber[0] = new Student("Mike", 1, 54);
@@ -84,7 +76,6 @@ public class App {
         iDNumber[2] = new Student("Masha", 4, 49);
         iDNumber[3] = new Student("Ann", 5, 75);
         iDNumber[4] = new Student("Michael", 3, 32);
-
         //insertionSort(iDNumber);
         //quickSort(iDNumber, 0, iDNumber.length - 1);
 
@@ -97,10 +88,10 @@ public class App {
         iDNumber2[2] = new Student("Amanda", 8, 31);
         iDNumber2[3] = new Student("Emma", 7, 70);
         iDNumber2[4] = new Student("Victoria", 10, 45);
-
         Student[] newArr = mergeSort(iDNumber, iDNumber2);
         for (Student student : newArr) {
             System.out.println(student);
         }
     }
 }
+

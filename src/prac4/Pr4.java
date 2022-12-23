@@ -1,28 +1,22 @@
 package prac4;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
 public class Pr4 extends JFrame {
     JButton btn1 = new JButton("AC Milan");
     JButton btn2 = new JButton("Real Madrid");
     JLabel result = new JLabel("Result: 0 X 0");
     JLabel lastScorer = new JLabel("Last Scorer: N/A");
     JLabel winner = new JLabel("Winner: DRAW");
-
     int score1 = 0;
     int score2 = 0;
-
     Pr4() {
         super("App");
         setLayout(new FlowLayout());
         setSize(500, 100);
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
         add(btn1);
-
         btn1.addMouseListener(
                 new MouseListener() {
                     public void mouseClicked(java.awt.event.MouseEvent a) {
@@ -41,7 +35,6 @@ public class Pr4 extends JFrame {
                     public void mouseExited(java.awt.event.MouseEvent a) {}
                 }
         );
-
         btn2.addMouseListener(
                 new MouseListener() {
                     public void mouseClicked(java.awt.event.MouseEvent a) {
@@ -60,13 +53,11 @@ public class Pr4 extends JFrame {
                     public void mouseExited(java.awt.event.MouseEvent a) {}
                 }
         );
-
         add(btn2);
         add(result);
         add(lastScorer);
         add(winner);
     }
-
     public static void main(String[] args) {
         new Pr4();
     }

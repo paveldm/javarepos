@@ -1,7 +1,5 @@
 package prac5;
-
 import java.util.Scanner;
-
 public class n17 {
     public static int max_num() {
         Scanner scanner = new Scanner(System.in);
