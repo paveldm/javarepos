@@ -1,5 +1,4 @@
 package lab3;
-
 public class Main {
     public static void main(String[] args) {
         Dish d1 = new Plate("clay", "blue", 15);

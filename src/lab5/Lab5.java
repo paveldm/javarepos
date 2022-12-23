@@ -1,9 +1,7 @@
 package lab5;
-
 import java.util.Scanner;
 import java.awt.*;
 import javax.swing.*;
-
 public class Lab5 extends JFrame {
     public static void main(String[] args) {
         System.out.println("Введите полный путь файла: ");

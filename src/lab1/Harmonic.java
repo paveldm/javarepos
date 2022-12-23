@@ -1,7 +1,5 @@
 package lab1;
-
 import java.util.Scanner;
-
 public class Harmonic {
     public static String harmonic(int n){
         double sum = 0;
@@ -14,7 +12,6 @@ public class Harmonic {
         }
         return "";
     }
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();

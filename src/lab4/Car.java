@@ -1,5 +1,4 @@
 package lab4;
-
 public class Car implements Priceable{
     private String brand;
     private String color;

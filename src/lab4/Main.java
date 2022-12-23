@@ -1,5 +1,4 @@
 package lab4;
-
 public class Main {
     public static void main(String args[]) {
         Priceable price1 = new Car("KIA", "yellow", 1500000);
